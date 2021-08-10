@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is:
+    /* font-size: 10px; rem definition */
+    font-size: 62.5%; /* percentage of user defined browser font-size which is usually 16px(10/16 = 0.625) */
+}
+
+body {
+    box-sizing: border-box; /* the box model content size includes height\width + padding + border */
+}
