@@ -10,6 +10,26 @@ html {
     // This defines what 1rem is:
     /* font-size: 10px; rem definition */
     font-size: 62.5%; /* percentage of user defined browser font-size which is usually 16px(10/16 = 0.625) */
+    
+    // @include respond-phone {
+    //     font-size: 50%;
+    // }
+
+    // @include respond(phone) {
+    //     font-size: 50%;
+    // }
+
+    @include respond(tab-land) {
+        font-size: 56.25%; // 1rem = 9px, 9 / 16 = 56.25%
+    }
+    
+    @include respond(tab-port) {
+        font-size: 50%; // 1rem = 8px, 8 / 16 = 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 12px, 12 / 16 = 75%
+    }
 }
 
 body {
